@@ -9,7 +9,7 @@ routes.get('/items', async (request, response) => {
         return {
             "id": item.id,
             "title": item.title,
-            "url": `http://localhost:3333/assets/${item.image}`
+            "url": `http://192.168.15.14:3333/assets/${item.image}`
         }
     })
     return response.json(serializedItems)
